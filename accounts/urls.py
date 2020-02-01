@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 
 urlpatterns = [
-    path('', views.home),
-    path('products/', views.products),
-    path('customers/<str:id>/', views.customers)
+    path('', views.home, name="home"),
+    path('products/', views.products, name="products"),
+    path('customers/<str:id>/', views.customers,name="customers")
 ]
