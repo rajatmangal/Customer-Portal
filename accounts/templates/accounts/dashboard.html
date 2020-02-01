@@ -16,7 +16,7 @@
                     </tr>
                     {% for i in customers %}
                         <tr>
-                            <td>{{ i.id }}</td>
+                            <td><a href="#" class="btn btn-sm btn-info">View</a></td>
                             <td>{{ i.name }}</td>
                             <td>{{ i.phone }}</td>
                         </tr>
@@ -39,11 +39,11 @@
                     </tr>
                     {% for i in order %}
                     <tr>
-                        <td>{{ i.product }}</td>
+                        <td>{{ i.product.name }}</td>
                         <td>{{ i.date_created }}</td>
                         <td>{{ i.status }}</td>
-                        <td><a href="#">Update</a></td>
-                        <td><a href="#">Delete</a></td>
+                        <td><a href="#" class="btn btn-sm btn-info">Update</a></td>
+                        <td><a href="#" class="btn btn-sm btn-danger">Delete</a></td>
                     </tr>
                     {% endfor %}
                 </table>
